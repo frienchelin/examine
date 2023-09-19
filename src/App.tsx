@@ -18,7 +18,7 @@ function App() {
 
     useEffect(() => {
         if (mapRef.current) return;
-        mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_PUBLIC_ACCESS_TOKEN!;
+        mapboxgl.accessToken = 'pk.eyJ1IjoienppZCIsImEiOiJja2RzNWh5N3gwNnc1MzRuMjBvMDA5bDkwIn0.rqTJhfLjsy7V0NO4sy21YQ';
         mapRef.current = new mapboxgl.Map({
             container: mapContainerRef.current, // HTML element ID where the map will be displayed
             style: 'mapbox://styles/mapbox/streets-v12', // Map style
